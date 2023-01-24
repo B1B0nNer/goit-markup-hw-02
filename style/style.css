@@ -1,0 +1,216 @@
+body{
+    width: 1440px;
+    height: 2275px;
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+}
+
+ a{
+    text-decoration: none;
+    color: #2E2F42;
+ }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.title_info li{
+    font-weight: bold;
+    color: #434455; 
+}
+
+.contacts{
+    margin-left: 400px;
+    color: #434455;
+}
+
+.title_info li, .contacts li{
+    margin-right: 35px;
+}
+
+.hero{
+    height: 600px;
+    background-color: #2E2F42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    width: 400px;
+    color: white;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.fakebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #4D5AE5;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about_us{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#About_Us{
+    font-size: xx-large;
+    color: #2E2F42; 
+}
+
+.skills{
+    width: 1128px;
+    height: 104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills li{
+    margin-right: 24px
+}
+
+.skills h3{
+    font-weight: bold;
+    font-size: x-large;
+    color: #2E2F42;
+}
+
+.skills p{
+    color: #434455;
+}
+
+.what_are_we_doing{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.what_are_we_doing li{
+    width: 360px;
+}
+
+.what_are_we_doing h2, .team h2{
+    color: #2E2F42;
+    font-size: xx-large;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+}
+
+.images img{
+    width: 360;
+    height: 300;
+    margin-right: 24px;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.team_pics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_pics li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 370px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.team_pics li h3{
+    color: #2E2F42;
+}
+
+.team li p{
+    color: #434455;
+}
+
+footer{
+    height: 310px;
+    background-color: #2E2F42;
+    display: flex;
+    justify-content: center;
+    flex-direction: column  ;
+}
+
+.name_in_end{
+    margin-left: 156px;
+    margin-top: 30px;
+    color: #4D5AE5;
+}
+.end_text{
+    width: 264px;
+    color: #E7E9FC;
+    margin-left: 156px;
+}
+
+.name_in_end{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.WEB{
+    color: #4D5AE5  ;
+}
+
+#STUDIO2{
+    color: white;
+}
