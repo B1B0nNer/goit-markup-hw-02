@@ -1,8 +1,15 @@
+:root{
+    --iris: #4D5AE5;
+    --cornflower: #E7E9FC;
+    --navyblue: #2E2F42;
+    --slate: #434455;
+}
+
 body{
     width: 1440px;
-    height: 2275px;
     margin: auto;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2%;
 }
 
 header{
@@ -11,14 +18,42 @@ header{
     height: 72px;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid var(--cornflower);
+}
+
+h1{
+    text-align: center;
+    font-size: 56px;
+    font-weight: bolder;
+    size: 60px;
+}
+
+h2{
+    font-weight: bolder;
+    font-size: 36px;
+    letter-spacing: 2%;
+}
+
+h3{
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+
+button{
+    font-weight: regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
 }
 
  a{
     text-decoration: none;
-    color: #2E2F42;
+    color: var(--navyblue);
  }
 
-nav{
+.title{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,12 +73,12 @@ ul{
 
 .title_info li{
     font-weight: bold;
-    color: #434455; 
+    color: var(--slate); 
 }
 
 .contacts{
     margin-left: 400px;
-    color: #434455;
+    color: var(--slate);
 }
 
 .title_info li, .contacts li{
@@ -52,19 +87,16 @@ ul{
 
 .hero{
     height: 600px;
-    background-color: #2E2F42;
+    background-color: var(--navyblue);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-h1{
-    width: 400px;
+.credo{
+    width: 494px;
     color: white;
-    text-align: center;
-    font-size: xxx-large;
-    font-weight: bold;
 }
 
 .fakebutton{
@@ -93,7 +125,7 @@ h1{
 
 #About_Us{
     font-size: xx-large;
-    color: #2E2F42; 
+    color: var(--navyblue); 
 }
 
 .skills{
@@ -112,11 +144,11 @@ h1{
 .skills h3{
     font-weight: bold;
     font-size: x-large;
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 
 .skills p{
-    color: #434455;
+    color: var(--slate);
 }
 
 .what_are_we_doing{
@@ -132,7 +164,7 @@ h1{
 }
 
 .what_are_we_doing h2, .team h2{
-    color: #2E2F42;
+    color: var(--navyblue);
     font-size: xx-large;
 }
 
@@ -176,16 +208,16 @@ h1{
 }
 
 .team_pics li h3{
-    color: #2E2F42;
+    color: var(--navyblue);
 }
 
 .team li p{
-    color: #434455;
+    color: var(--slate);
 }
 
 footer{
     height: 310px;
-    background-color: #2E2F42;
+    background-color: var(--navyblue);
     display: flex;
     justify-content: center;
     flex-direction: column  ;
@@ -194,11 +226,11 @@ footer{
 .name_in_end{
     margin-left: 156px;
     margin-top: 30px;
-    color: #4D5AE5;
+    color: var(--iris);
 }
 .end_text{
     width: 264px;
-    color: #E7E9FC;
+    color: var(--cornflower);
     margin-left: 156px;
 }
 
@@ -208,9 +240,89 @@ footer{
 }
 
 .WEB{
-    color: #4D5AE5  ;
+    color: var(--iris);
 }
 
 #STUDIO2{
     color: white;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.filters button{
+    margin-left: 24px;
+    color: var(--iris);
+    height: 48px;
+    border: 1px solid var(--cornflower);
+    font-weight: bold;
+}
+
+.filters button:hover{
+    background-color: var(--iris);
+    color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: none;
+}
+
+#all-btn{
+    width: 69px;
+}
+
+#website-btn{
+    width: 116px;
+}
+
+#app-btn{
+    width: 78px;
+}
+
+#design-btn{
+    width:101px;
+}
+
+#marketing-btn{
+    width: 126px;
+}
+
+.products section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.products section li{
+    margin-left: 24px;
+    border: 1px solid var(--cornflower);
+}
+
+.products section h3{
+    color: var(--navyblue);
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.products section p{
+    color: var(--slate);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.products section h3, .products section p{
+    margin-left: 16px;
+}
+
+.second_row{
+    margin-left: 67px;
 }
