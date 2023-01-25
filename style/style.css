@@ -3,13 +3,15 @@
     --cornflower: #E7E9FC;
     --navyblue: #2E2F42;
     --slate: #434455;
+    --ocean: #404BBF;
+    --cloud: #F4F4FD;
 }
 
 body{
     width: 1440px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 
 header{
@@ -21,36 +23,21 @@ header{
     border-bottom: 1px solid var(--cornflower);
 }
 
-h1{
-    text-align: center;
-    font-size: 56px;
-    font-weight: bolder;
-    size: 60px;
-}
-
-h2{
-    font-weight: bolder;
-    font-size: 36px;
-    letter-spacing: 2%;
-}
-
-h3{
-    font-weight: medium;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-}
-
-button{
-    font-weight: regular;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 4%;
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
  a{
     text-decoration: none;
-    color: var(--navyblue);
  }
 
 .title{
@@ -60,9 +47,53 @@ button{
     align-items: center;
 }
 
+.navigation{
+    color: var(--navyblue);
+    position: relative;
+}
+
+.navigation::after{ 
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 3px;
+    border-radius: 2px;
+    width: 0;
+    background: var(--ocean);
+    transition: width 0.24s ease 0s, left 0.24s ease 0s;
+}
+
+.navigation:hover::after{
+    border-bottom: 2px;
+    width: 100%; 
+    left: 0; 
+}
+
+.navigation:hover{
+    color: var(--ocean);
+}
+
 .logo{
-    font-size: x-large;
-    font-weight: bolder;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.WebLogo{
+    color: var(--iris);
+}
+
+.StudioLogo{
+    color: var(--navyblue);
+}
+
+.StudioLogo2{
+    color: var(--cloud);
 }
 
 ul{
@@ -78,7 +109,19 @@ ul{
 
 .contacts{
     margin-left: 400px;
+}
+
+.contacts a{
     color: var(--slate);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacts a:hover{
+    color: var(--ocean);
 }
 
 .title_info li, .contacts li{
@@ -96,7 +139,11 @@ ul{
 
 .credo{
     width: 494px;
-    color: white;
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: bolder;
+    size: 60px;
 }
 
 .fakebutton{
@@ -104,15 +151,26 @@ ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
-    color: white;
-    background-color: #4D5AE5;
-    border-radius: 5px;
+    width: 170px;
+    height: 51px;
+    color: #fff;
+    background-color: var(--iris);
+    border-radius: 4px;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     border: none;
-    font-size: large;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.fakebutton:hover{
+    box-shadow: none;
+}
+
+.fakebutton:active{
+    background-color: var(--ocean);
 }
 
 .about_us{
@@ -123,9 +181,17 @@ ul{
     align-items: center;
 }
 
-#About_Us{
+.About_Us{
     font-size: xx-large;
-    color: var(--navyblue); 
+    color: var(--navyblue);
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.about_us h3{
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .skills{
@@ -166,6 +232,8 @@ ul{
 .what_are_we_doing h2, .team h2{
     color: var(--navyblue);
     font-size: xx-large;
+    font-weight: bolder;
+    font-size: 36px;
 }
 
 .images{
@@ -186,6 +254,7 @@ ul{
     align-items: center;
     justify-content: center;
     height: 600px;
+    background-color: var(--cloud);
 }
 
 .team_pics{
@@ -205,10 +274,14 @@ ul{
     box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
     margin-right: 30px;
+    background-color: #fff;
 }
 
 .team_pics li h3{
     color: var(--navyblue);
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .team li p{
@@ -234,17 +307,8 @@ footer{
     margin-left: 156px;
 }
 
-.name_in_end{
-    font-weight: bold;
-    font-size: xx-large;
-}
-
 .WEB{
     color: var(--iris);
-}
-
-#STUDIO2{
-    color: white;
 }
 
 .filters{
@@ -262,49 +326,64 @@ footer{
     height: 48px;
     border: 1px solid var(--cornflower);
     font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
 }
 
 .filters button:hover{
     background-color: var(--iris);
-    color: white;
+    color: #fff;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     border: none;
 }
 
-#all-btn{
+.all-btn{
     width: 69px;
 }
 
-#website-btn{
+.website-btn{
     width: 116px;
 }
 
-#app-btn{
+.app-btn{
     width: 78px;
 }
 
-#design-btn{
+.design-btn{
     width:101px;
 }
 
-#marketing-btn{
+.marketing-btn{
     width: 126px;
 }
 
-.products section{
+.products ul{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.products section li{
-    margin-left: 24px;
+.products h2{
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.first_row, .second_row, .third_tow{
+    display: inline-block;
+    block-size: 30%;
+}
+
+.products_item{
+    margin-right: 30px;
+    margin-bottom: 25px;
     border: 1px solid var(--cornflower);
 }
 
-.products section h3{
+.products ul h2{
     color: var(--navyblue);
     margin-bottom: 8px;
     font-weight: 500;
@@ -312,14 +391,14 @@ footer{
     line-height: 20px;
 }
 
-.products section p{
+.products ul p{
     color: var(--slate);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
 
-.products section h3, .products section p{
+.products section ul, .products section ul{
     margin-left: 16px;
 }
 
