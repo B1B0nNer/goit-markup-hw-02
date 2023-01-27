@@ -81,7 +81,7 @@ header{
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .WebLogo{
@@ -117,7 +117,7 @@ ul{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .contacts a:hover{
@@ -141,9 +141,9 @@ ul{
     width: 494px;
     color: #fff;
     text-align: center;
+    font-weight: 700;
     font-size: 56px;
-    font-weight: bolder;
-    size: 60px;
+    line-height: 60px;
 }
 
 .fakebutton{
@@ -151,8 +151,8 @@ ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 51px;
+    width: 169px;
+    height: 56px;
     color: #fff;
     background-color: var(--iris);
     border-radius: 4px;
@@ -161,7 +161,7 @@ ul{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: regular;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 }
 
@@ -189,9 +189,15 @@ ul{
 }
 
 .about_us h3{
-    font-weight: medium;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about_us p{
+    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .skills{
@@ -231,9 +237,9 @@ ul{
 
 .what_are_we_doing h2, .team h2{
     color: var(--navyblue);
-    font-size: xx-large;
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 36px;
+    line-height: 2.5;
 }
 
 .images{
@@ -279,13 +285,16 @@ ul{
 
 .team_pics li h3{
     color: var(--navyblue);
-    font-weight: medium;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .team li p{
     color: var(--slate);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 footer{
@@ -300,11 +309,15 @@ footer{
     margin-left: 156px;
     margin-top: 30px;
     color: var(--iris);
+    text-decoration: none;
 }
 .end_text{
     width: 264px;
     color: var(--cornflower);
     margin-left: 156px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .WEB{
@@ -327,7 +340,7 @@ footer{
     border: 1px solid var(--cornflower);
     font-weight: bold;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 }
 
@@ -368,8 +381,11 @@ footer{
 }
 
 .products h2{
-    font-weight: bolder;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--navyblue);
+    margin-bottom: 8px;
 }
 
 .first_row, .second_row, .third_tow{
@@ -383,19 +399,11 @@ footer{
     border: 1px solid var(--cornflower);
 }
 
-.products ul h2{
-    color: var(--navyblue);
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 20px;
-}
-
 .products ul p{
     color: var(--slate);
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .products section ul, .products section ul{
