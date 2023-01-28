@@ -5,13 +5,14 @@
     --slate: #434455;
     --ocean: #404BBF;
     --cloud: #F4F4FD;
+    --white: #fff;
 }
 
 body{
     width: 1440px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.02em;
+    background-color: var(--white);
 }
 
 header{
@@ -72,7 +73,7 @@ header{
     left: 0; 
 }
 
-.navigation:hover{
+.navigation:hover, .navigation:focus{
     color: var(--ocean);
 }
 
@@ -103,8 +104,10 @@ ul{
 }
 
 .title_info li{
-    font-weight: bold;
-    color: var(--slate); 
+    color: var(--navyblue);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .contacts{
@@ -120,7 +123,7 @@ ul{
     line-height: 1.5;
 }
 
-.contacts a:hover{
+.contacts a:hover, .contacts a:focus{
     color: var(--ocean);
 }
 
@@ -139,11 +142,11 @@ ul{
 
 .credo{
     width: 494px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
     font-weight: 700;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
 }
 
 .fakebutton{
@@ -153,24 +156,29 @@ ul{
     align-items: center;
     width: 169px;
     height: 56px;
-    color: #fff;
+    color: var(--white);
     background-color: var(--iris);
     border-radius: 4px;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     border: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: inherit;
     font-weight: regular;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
 }
 
-.fakebutton:hover{
+.fakebutton:hover, .fakebutton:focus{
     box-shadow: none;
+    background-color: var(--ocean);
 }
 
 .fakebutton:active{
     background-color: var(--ocean);
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
 }
 
 .about_us{
@@ -182,9 +190,9 @@ ul{
 }
 
 .About_Us{
-    font-size: xx-large;
+    font-size: 36px;
     color: var(--navyblue);
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 36px;
 }
 
@@ -214,8 +222,10 @@ ul{
 }
 
 .skills h3{
-    font-weight: bold;
-    font-size: x-large;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--navyblue);
 }
 
@@ -239,7 +249,8 @@ ul{
     color: var(--navyblue);
     font-weight: 700;
     font-size: 36px;
-    line-height: 2.5;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 
 .images{
@@ -280,7 +291,7 @@ ul{
     box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
     margin-right: 30px;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .team_pics li h3{
@@ -288,6 +299,7 @@ ul{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .team li p{
@@ -295,6 +307,7 @@ ul{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 footer{
@@ -311,7 +324,14 @@ footer{
     color: var(--iris);
     text-decoration: none;
 }
-.end_text{
+
+a.end_text{
+    margin-left: 156px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+p.end_text{
     width: 264px;
     color: var(--cornflower);
     margin-left: 156px;
@@ -330,15 +350,16 @@ footer{
     align-items: center;
     justify-content: center;
     margin-top: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 75px;
 }
 
 .filters button{
+    font-family: inherit;
     margin-left: 24px;
     color: var(--iris);
     height: 48px;
     border: 1px solid var(--cornflower);
-    font-weight: bold;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -346,8 +367,15 @@ footer{
 
 .filters button:hover{
     background-color: var(--iris);
-    color: #fff;
+    color: var(--white);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: none;
+}
+
+.filters button:focus{
+    background-color: var(--iris);
+    color: var(--white);
     border-radius: 4px;
     border: none;
 }
@@ -372,7 +400,7 @@ footer{
     width: 126px;
 }
 
-.products ul{
+.products{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -386,14 +414,12 @@ footer{
     line-height: 1.5;
     color: var(--navyblue);
     margin-bottom: 8px;
-}
-
-.first_row, .second_row, .third_tow{
-    display: inline-block;
-    block-size: 30%;
+    letter-spacing: 0.02em;
 }
 
 .products_item{
+    display: inline-block;
+    block-size: 30%;
     margin-right: 30px;
     margin-bottom: 25px;
     border: 1px solid var(--cornflower);
@@ -404,6 +430,7 @@ footer{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .products section ul, .products section ul{
