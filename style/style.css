@@ -79,10 +79,10 @@ header{
 
 .logo{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.5;
+    letter-spacing: 0.03em;
 }
 
 .WebLogo{
@@ -105,9 +105,10 @@ ul{
 
 .title_info li{
     color: var(--navyblue);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .contacts{
@@ -117,10 +118,11 @@ ul{
 .contacts a{
     color: var(--slate);
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .contacts a:hover, .contacts a:focus{
@@ -141,11 +143,12 @@ ul{
 }
 
 .credo{
-    width: 494px;
+    width: 500px;
     color: var(--white);
     text-align: center;
     font-weight: 700;
     font-size: 56px;
+    letter-spacing: 0.02em;
     line-height: 1.07;
 }
 
@@ -162,7 +165,7 @@ ul{
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     border: none;
     font-family: inherit;
-    font-weight: regular;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -200,16 +203,17 @@ ul{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .about_us p{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .skills{
-    width: 1128px;
+    width: 1200px;
     height: 104px;
     display: flex;
     flex-direction: row;
@@ -231,6 +235,9 @@ ul{
 
 .skills p{
     color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .what_are_we_doing{
@@ -251,6 +258,8 @@ ul{
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .images{
@@ -304,7 +313,6 @@ ul{
 
 .team li p{
     color: var(--slate);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -318,17 +326,11 @@ footer{
     flex-direction: column  ;
 }
 
-.name_in_end{
-    margin-left: 156px;
-    margin-top: 30px;
-    color: var(--iris);
-    text-decoration: none;
-}
-
 a.end_text{
     margin-left: 156px;
     font-weight: 800;
     font-size: 18px;
+    letter-spacing: 0.03em;
 }
 
 p.end_text{
@@ -338,6 +340,7 @@ p.end_text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .WEB{
@@ -358,6 +361,7 @@ p.end_text{
     margin-left: 24px;
     color: var(--iris);
     height: 48px;
+    background-color: var(--cloud);
     border: 1px solid var(--cornflower);
     font-weight: 500;
     font-size: 16px;
@@ -425,9 +429,8 @@ p.end_text{
     border: 1px solid var(--cornflower);
 }
 
-.products ul p{
+.products p{
     color: var(--slate);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
