@@ -9,7 +9,6 @@
 }
 
 body{
-    width: 1440px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
     background-color: var(--white);
@@ -39,6 +38,10 @@ header{
 
  a{
     text-decoration: none;
+ }
+
+ .container{
+    width: 1158px;
  }
 
 .title{
